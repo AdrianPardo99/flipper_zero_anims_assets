@@ -1,0 +1,9 @@
+Filetype: Flipper Animation Manifest
+Version: 1
+
+Name: rf_village_mx
+Min butthurt: 0
+Max butthurt: 18
+Min level: 1
+Max level: 30
+Weight: 8
