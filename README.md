@@ -110,3 +110,38 @@ This repository currently uses the path names `o_firmare/` and `momentum/`.
 
 - `o_firmare/` is the current official-firmware source path in this repo.
 - Older references such as `o_firmware` or `momemtum` are incorrect for this repository and should not be used when copying files.
+
+## Asset creation references
+
+Use these repositories as source references when building your own assets for Momentum Firmware and Flipper Zero official firmware:
+
+- [Next-Flip/Asset-Packs](https://github.com/Next-Flip/Asset-Packs.git)
+- [flipperdevices/flipperzero-firmware](https://github.com/flipperdevices/flipperzero-firmware.git)
+
+For pixel art, animation frames, and related artwork workflows, Aseprite is commonly used as a third-party paid application.
+
+Mandatory baseline sizes for new artwork:
+
+- `128x64` for general Flipper screen-oriented pixel art and animation compositions.
+- `46x49` for passport-style images.
+
+Default asset classification naming:
+
+- Use `Anims` for animation assets (`128x64` baseline).
+- Use `Passport/` for passport-style images (`46x49` baseline states).
+
+Recommended default naming for `Passport/`:
+
+- `passport_128x64` for a static passport-style full-screen image.
+- `passport_bad_46x49` for angry/bad state artwork.
+- `passport_happy_46x49` for happy state artwork.
+- `passport_okay_46x49` for neutral/okay state artwork.
+
+Recommended default naming for `Anims` source frames:
+
+- Use the `frame_` sequence prefix (`frame_0`, `frame_1`, `frame_2`, etc.).
+- Use that frame sequence as the source for custom `128x64` animation builds.
+
+Use a monochromatic workflow (1-bit, black and white) to match Flipper display behavior and keep visual compatibility across firmware variants.
+
+Treat these values as practical defaults. Some specific assets can require different dimensions depending on firmware format requirements.
